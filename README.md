@@ -111,3 +111,24 @@ rosservice call /UR16e/ur_hardware_interface/dashboard/power_off
 ```
 There are two ways to control the gripper, using a python or C++ library.
 
+# IMPORTANT TO RUN THE DEMO
+
+Run in this order
+'''
+roslaunch argonne_final_project dual_arm_bringup.launch
+
+roslaunch argonne_final_project marco_all.launch
+'''
+
+Make sure of a few things as well. 
+
+Make sure the scripts are playing. If the GUI fails then call the following after running the dual arm launch file.
+
+'''
+rosservice call /ur5e/ur_hardware_interface/dashboard/play
+rosservice call /ur16e/ur_hardware_interface/dashboard/play
+'''
+
+Make sure the camera is connected.
+
+Make sure to go into the MiR software and move the mobile base to a location in front of the object if not already.
