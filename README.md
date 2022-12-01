@@ -132,3 +132,4 @@ rosservice call /ur16e/ur_hardware_interface/dashboard/play
 Make sure the camera is connected.
 
 Make sure to go into the MiR software and move the mobile base to a location in front of the object if not already.
+
